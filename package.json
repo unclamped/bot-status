@@ -1,0 +1,28 @@
+{
+  "name": "bot-status",
+  "version": "1.0.0",
+  "description": "A Discord.JS bot that displays information about a gameserver on its status",
+  "main": "./dist/index.js",
+  "author": "Matías Olcese",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "dependencies": {
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3",
+    "gamedig": "^4.0.6"
+  },
+  "devDependencies": {
+    "@tsconfig/node18-strictest": "^1.0.0",
+    "@types/gamedig": "^4.0.1",
+    "@types/node": "^18.15.5",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "typescript": "^5.0.2"
+  }
+}
