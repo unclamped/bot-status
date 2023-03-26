@@ -15,14 +15,17 @@ import { ActivityType, Client, GatewayIntentBits } from 'discord.js'; // Import 
 import type { Type } from 'gamedig'; // Import GameDig's "Type" type for game server types
 import Gamedig from 'gamedig'; // Import GameDig for the server queries
 import dotenv from 'dotenv'; // Import dotenv for configs
+import fs from 'fs';
 
 // Create the bot instance
 const client = new Client({
   intents: [GatewayIntentBits.Guilds],
 });
 
-// Import the .env file values
-dotenv.config();
+// If a .env file exists, load its environment variables
+if (fs.existsSync('.env')) {
+    dotenv.config({ path: '.env' });
+}
 
 /* Function to set the ActivityType to whatever the user set on the environment variable for the
 Activity string, so this return an actual type instead of a string */
