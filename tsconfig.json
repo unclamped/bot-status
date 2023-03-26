@@ -3,4 +3,4 @@
       "outDir": "./dist"
     },
     "extends": "@tsconfig/node18/tsconfig"
-  }
+}
