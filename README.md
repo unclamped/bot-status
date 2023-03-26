@@ -1,7 +1,7 @@
 # bot-status
 A Discord.JS bot that displays information about a game server on its status
 
-# Installation
+## Installation
 - Running the bot directly in the host machine:
     1. Install [Node.JS](https://nodejs.org/en/download/)
     2. Install [pnpm](https://pnpm.io/installation)
@@ -15,7 +15,7 @@ A Discord.JS bot that displays information about a game server on its status
     3. Build the image with `docker compose build`
     4. Run the container with `docker compose up -d`
 
-# Configuration
+## Configuration
 This bot uses environment variables for its settings, depending on how you installed the bot, you can configure it in different ways:
 
 - Running the bot directly in the host machine:
@@ -28,7 +28,7 @@ This bot uses environment variables for its settings, depending on how you insta
 - Running the bot with Docker:
     1. In the `docker-compose.yaml` file, modify the `environment` section to your needs
 
-## Settings
+### Settings
 - Available settings:
     - `TOKEN`: The bot's Discord token
         - You can get a token by creating a new application on the [Discord Developer Portal](https://discord.com/developers/applications)
@@ -40,8 +40,8 @@ This bot uses environment variables for its settings, depending on how you insta
     - `ACTIVITY`: The activity the bot should display (e.g. `Playing`)
         - Available values: `Playing`, `Streaming`, `Listening`, `Watching`, `Competing`
 
-# Usage
+## Usage
 If you installed the bot directly in the host machine, you can run it with `pnpm start`. Or else, if you installed it with Docker, you can do the same with `docker compose up -d`.
 
-# License
+## License
 This software is licensed under the `New BSD License`. See the ``LICENSE`` file in the top distribution directory for the full license text.
