@@ -6,7 +6,6 @@ services:
     build:
       context: .
     restart: unless-stopped
-    container_name: bot-status
     environment:
       - TOKEN=${TOKEN}
       - IP=${IP}
