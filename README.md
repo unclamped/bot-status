@@ -16,17 +16,9 @@ A Discord.JS bot that displays information about a game server on its status
     4. Run the container with `docker compose up -d`
 
 ## Configuration
-This bot uses environment variables for its settings, depending on how you installed the bot, you can configure it in different ways:
-
-- Running the bot directly in the host machine:
-    1. Using a .env file:
-        1. Rename the `.env.sample` file to `.env`
-        2. Modify the `.env` file to your needs
-
-    2. Using environment variables:
-        - Pass them directly to the program like so: `TOKEN=your_token_here IP=your_ip_here PORT=... pnpm start`
-- Running the bot with Docker:
-    1. In the `docker-compose.yaml` file, modify the `environment` section to your needs
+1. Rename the `.env.sample` file to `.env`
+2. Modify the `.env` file to your needs
+- This applies for both Docker and non-Docker installations, since Docker automatically parses `.env` files
 
 ### Settings
 - Available settings:
