@@ -1,6 +1,8 @@
 # bot-status
 A Discord.JS bot that displays information about a game server on its status
 
+![image](https://user-images.githubusercontent.com/104658278/227810439-986ca705-d698-4e3e-8ebe-6b5021f8d33f.png)
+
 ## Installation
 - Running the bot directly in the host machine:
     1. Install [Node.JS](https://nodejs.org/en/download/)
