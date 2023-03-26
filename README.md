@@ -2,22 +2,33 @@
 A Discord.JS bot that displays information about a game server on its status
 
 # Installation
-1. Install [Node.JS](https://nodejs.org/en/download/)
-2. Install [pnpm](https://pnpm.io/installation)
-3. Clone this repository with `git clone https://github.com/ServiLive/bot-status.git`
-4. Install the dependencies with `pnpm install`
-5. Build the bot with `pnpm build`
+- Running the bot directly in the host machine:
+    1. Install [Node.JS](https://nodejs.org/en/download/)
+    2. Install [pnpm](https://pnpm.io/installation)
+    3. Clone this repository with `git clone https://github.com/ServiLive/bot-status.git`
+    4. Install the dependencies with `pnpm install`
+    5. Build the bot with `pnpm build`
+
+- Running the bot with Docker:
+    1. Install [Docker](https://docs.docker.com/get-docker/)
+    2. Clone this repository with `git clone https://github.com/ServiLive/bot-status.git`
+    3. Build the image with `docker compose build`
+    4. Run the container with `docker compose up -d`
 
 # Configuration
-This bot uses environment variables for its settings, so you can either pass them directly to the program, or use a .env file:
+This bot uses environment variables for its settings, depending on how you installed the bot, you can configure it in different ways:
 
-1. Using a .env file:
-    1. Rename the `.env.sample` file to `.env`
-    2. Modify the `.env` file to your needs
+- Running the bot directly in the host machine:
+    1. Using a .env file:
+        1. Rename the `.env.sample` file to `.env`
+        2. Modify the `.env` file to your needs
 
-2. Using environment variables:
-    - Pass them directly to the program like so: `TOKEN=your_token_here IP=your_ip_here PORT=... pnpm start`
+    2. Using environment variables:
+        - Pass them directly to the program like so: `TOKEN=your_token_here IP=your_ip_here PORT=... pnpm start`
+- Running the bot with Docker:
+    1. In the `docker-compose.yaml` file, modify the `environment` section to your needs
 
+## Settings
 - Available settings:
     - `TOKEN`: The bot's Discord token
         - You can get a token by creating a new application on the [Discord Developer Portal](https://discord.com/developers/applications)
@@ -30,7 +41,7 @@ This bot uses environment variables for its settings, so you can either pass the
         - Available values: `Playing`, `Streaming`, `Listening`, `Watching`, `Competing`
 
 # Usage
-1. Start the bot with `pnpm start`
+If you installed the bot directly in the host machine, you can run it with `pnpm start`. Or else, if you installed it with Docker, you can do the same with `docker compose up -d`.
 
 # License
 This software is licensed under the `New BSD License`. See the ``LICENSE`` file in the top distribution directory for the full license text.
