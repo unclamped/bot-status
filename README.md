@@ -31,6 +31,7 @@ A Discord.JS bot that displays information about a game server on its status
     - `DELAY` The delay between each status update in milliseconds (e.g. `15000`)
         - Discord has a rate limit of 5 status updates per minute, so you should not set this value below 12000
     - `GAME` The game the server corresponds to (e.g. `minecraft`)
+        - You can find the full list on the [GameDig README](https://github.com/gamedig/node-gamedig#games-list)
     - `ACTIVITY`: The activity the bot should display (e.g. `Playing`)
         - Available values: `Playing`, `Streaming`, `Listening`, `Watching`, `Competing`
 
