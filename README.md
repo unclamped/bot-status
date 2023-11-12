@@ -21,6 +21,7 @@ A Discord.JS bot that displays information about a game server on its status
 1. Rename the `.env.sample` file to `.env`
 2. Modify the `.env` file to your needs
 - This applies for both Docker and non-Docker installations, since Docker automatically parses `.env` files
+If you want to run more than one bot at once, you should add each bot's settings, with their variable name followed by a _ and the number that follows the previous bot setting.
 
 ### Settings
 - Available settings:

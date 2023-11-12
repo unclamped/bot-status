@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "outDir": "./dist"
+      "outDir": "./dist",
     },
-    "extends": "@tsconfig/node18/tsconfig"
+    "extends": "@tsconfig/node20/tsconfig"
 }
