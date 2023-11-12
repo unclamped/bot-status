@@ -3,13 +3,17 @@ version: "3.9"
 
 services:
   bot-status:
-    build:
-      context: .
+    image: unclamped/bot-status:latest
+
+    # uncomment this section if you want to build the image by yourself
+    # build:
+    #   context: .
+
     restart: unless-stopped
     environment:
-      - TOKEN=${TOKEN}
-      - IP=${IP}
-      - PORT=${PORT}
-      - DELAY=${DELAY}
-      - GAME=${GAME}
-      - ACTIVITY=${ACTIVITY}
+      - TOKEN_1=${TOKEN_1}
+      - IP_1=${IP_1}
+      - PORT_1=${PORT_1}
+      - DELAY_1=${DELAY_1}
+      - GAME_1=${GAME_1}
+      - ACTIVITY_1=${ACTIVITY_1}
