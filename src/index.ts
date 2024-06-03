@@ -11,7 +11,7 @@
  * or the LICENSE file in the root directory of this source tree.
 */
 
-import { ActivityType, Client, GatewayIntentBits } from 'discord.js';
+import { ActivityType, Client, GatewayIntentBits, PresenceUpdateStatus } from 'discord.js';
 import type { Type } from 'gamedig';
 import Gamedig from 'gamedig';
 import dotenv from 'dotenv';
@@ -58,9 +58,11 @@ function updateStatus(client: Client, config: any) {
         port: parseInt(config['port'] as string ?? '27015'),
         givenPortOnly: true
     }).then((stats) => {
+        client.user?.setStatus(PresenceUpdateStatus.Online);
         client.user?.setActivity(`${stats.players.length}/${stats.maxplayers} (${stats.map})`, { type: getActivityType(config['activity'] || 'Watching') });
     }).catch((error) => {
         console.error(error)
+        client.user?.setStatus(PresenceUpdateStatus.DoNotDisturb);
         client.user?.setActivity(`The server is offline`, { type: getActivityType(config['activity'] || 'Watching') });
     });
 };
