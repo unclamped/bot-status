@@ -9,8 +9,10 @@ A Discord.JS bot that displays information about a game server on its status
     1. Install [Node.JS](https://nodejs.org/en/download/)
     2. Install [pnpm](https://pnpm.io/installation)
     3. Clone this repository with `git clone https://github.com/unclamped/bot-status.git`
-    4. Install the dependencies with `pnpm install`
-    5. Build the bot with `pnpm build`
+    4. `cd` into the cloned repository
+    5. Install the dependencies with `pnpm install`
+    6. Build the bot with `pnpm build`
+    7. Run the bot with `pnpm start`
 
 - Running the bot with Docker:
     1. Install [Docker](https://docs.docker.com/get-docker/)
